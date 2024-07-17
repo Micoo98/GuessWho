@@ -5,6 +5,8 @@ body {
     justify-content: center; /* Optional: Center horizontally */
     align-items: center; /* Center vertically */
     height: 100vh; /* Full viewport height */
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 
 #SelectionBody {
@@ -14,16 +16,30 @@ body {
     box-shadow: 10px 10px 5px black;
 }
 
-#Choices {
+button {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    text-align: center;
+    gap: 5%; /* Optional: Space between buttons */
+}
+
+.centerEl {
     display: flex;
     justify-content: center;
     width: 100%;
     height: auto;
 }
 
-#Choices>table {
+.centerEl>table {
     display: table;
-    width: 50%;
+    width: 65%;
     height: auto;
     background-color: black;
     border-radius: 25%;
@@ -39,7 +55,7 @@ body {
     font-size: 1vw;
 }
 
-#Choices td {
+.centerEl td {
     background-color: azure;
     width: 25%;
 }
@@ -48,7 +64,7 @@ body {
     font-size: 5vw;
 }
 
-#Choices .icon {
+.centerEl .icon {
     width: 100%;
     object-fit: contain;
 }
