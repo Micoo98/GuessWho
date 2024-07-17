@@ -55,12 +55,10 @@ body {
 
 @media (max-width: 768px) {
 
-    body {
-        background-color: slategray;
-        text-align: center;
-        display: flex;
-        justify-content: center; /* Optional: Center horizontally */
-        align-items: center; /* Center vertically */
-        height: 50%; /* Full viewport height */
+    #SelectionBody {
+        width: 75%;
+        background-color: aqua;
+        border-radius: 25%;
+        margin-bottom: 20%;
     }
 }
