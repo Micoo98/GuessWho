@@ -21,7 +21,7 @@ body {
 }
 
 #Choices>table {
-    display: flex;
+    display: table;
     width: 50%;
     height: auto;
     background-color: black;
