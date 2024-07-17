@@ -9,6 +9,7 @@ body {
 
 #SelectionBody {
     width: 75%;
+    height: 50%;
     background-color: aqua;
     border-radius: 25%;
 }
