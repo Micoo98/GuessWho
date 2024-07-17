@@ -17,10 +17,12 @@ body {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 #Choices>table {
+    display: flex;
+    justify-content: center;
     width: 50%;
     height: 50%;
     background-color: black;
