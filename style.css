@@ -13,6 +13,32 @@ body {
     border-radius: 25%;
 }
 
+#Choices {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#Choices>table {
+    width: 50%;
+    height: 50%;
+    background-color: black;
+    border-radius: 25%;
+    padding: 5%;
+    border-spacing: 10px;
+    border-collapse: separate;
+    text-align: center;
+}
+#Choices td {
+    background-color: azure;
+}
+
 .mainText {
     font-size: 400%;
+}
+
+#Choices .icon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
