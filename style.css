@@ -31,6 +31,7 @@ body {
     border-collapse: separate;
     text-align: center;
     object-fit: contain;
+    margin-bottom: 5%;
 }
 
 .tableD {
