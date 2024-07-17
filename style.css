@@ -8,6 +8,7 @@ body {
 }
 
 #SelectionBody {
+    width: 75%;
     background-color: aqua;
     border-radius: 25%;
 }
@@ -22,7 +23,7 @@ body {
 #Choices>table {
     display: flex;
     width: 50%;
-    height: 100%;
+    height: auto;
     background-color: black;
     border-radius: 25%;
     padding: 5%;
@@ -30,6 +31,10 @@ body {
     border-collapse: separate;
     text-align: center;
     object-fit: contain;
+}
+
+.tableD {
+    font-size: 1vw;
 }
 
 #Choices td {
