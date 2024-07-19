@@ -67,6 +67,10 @@ button {
     object-fit: contain;
 }
 
+a {
+    text-decoration: none;
+}
+
 @media (max-width: 768px) {
 
     #SelectionBody {
