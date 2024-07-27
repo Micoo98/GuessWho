@@ -1,5 +1,17 @@
 document.addEventListener('DOMContentLoaded', (event) => {
 
+    function randomize(image) {
+        console.log("randomize function called");
+        const randomElement = getRandomElements(flippables);
+        if(randomElement) {
+            image.src = randomElement.src;
+            console.log("randomized image");
+        }
+        else {
+            console.error("didn't get randomElement");
+        }
+    }
+
     function toggleImage(image) {
         if(image.getAttribute('data-flipped') === 'false' || image.getAttribute('data-flipped') === null)
         {
@@ -28,9 +40,18 @@ document.addEventListener('DOMContentLoaded', (event) => {
         return elements[randomIndex];
     }
 
-    const randomElement = getRandomElements(flippables);
-
     const yourCharacter = document.getElementById("YourCharacter");
 
-    yourCharacter.src = randomElement.src;
+    const randomElement = getRandomElements(flippables);
+
+    if (yourCharacter) {
+        yourCharacter.addEventListener('click', function() {
+            randomize(this);
+        });
+        randomize(yourCharacter);
+    }
+    else {
+        console.error("yourCharacter not found");
+    }
+    
 });
